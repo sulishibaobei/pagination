@@ -1,0 +1,19 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="stand-0" type="info">
+  <ngb-panel title="数据" id="stand-0">
+    <ng-template ngbPanelContent>
+      <table class="table ">
+        <tbody>
+          <tr *ngFor="let p of page;let i = index">
+            <div *ngIf=" i>=pageSize-pageData && i< pageSize" class="div">
+              <td class="td">{{p.id}}</td>
+              <td class="td">{{p.name}}</td>
+              <td class="td">{{p.age}}</td>
+            </div>
+          </tr>
+        </tbody>
+      </table>
+      <page [pageParams]="{pageSize:pageSize,totalNum:totalNum,curPage:pageSize/pageData,totalPage:totalPage,pageData:pageData}"
+        (changeCurPage)="getPageData($event)"></page>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

@@ -1,0 +1,8 @@
+<div *ngIf="buttonBluePrint">
+  <button type="button" class="btn {{buttonBluePrint.type}}" (click)="buttonBluePrint.onClick(buttonBluePrint.id)">
+     <app-ui-label  [labelBluePrint]="buttonBluePrint.caption"></app-ui-label>
+   </button>
+</div>
+
+
+

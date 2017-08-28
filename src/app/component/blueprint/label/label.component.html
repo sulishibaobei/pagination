@@ -1,0 +1,10 @@
+<!--<div *ngIf="labelBluePrint " [style.color]="getColor(labelBluePrint.id)" [ngStyle]="{'font-size.px':24}">
+  {{labelBluePrint.content}}
+</div>-->
+
+<div *ngIf="labelBluePrint " [ngClass]="{label:labelBluePrint.id === 1,'text-primary':labelBluePrint.id=== 2,'text-info':labelBluePrint.id === 3
+  }">
+  {{labelBluePrint.content}}
+</div>
+
+<label class=label>Abore简</label>

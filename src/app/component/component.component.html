@@ -1,0 +1,32 @@
+<ngb-tabset type="pills">
+  <ngb-tab title="button">
+    <ng-template ngbTabTitle>
+      <span><app-label [value]="value" [color]="color" [fontSize]="fontSize" [width]="width" [height]="height"  (test)="test($event)" ></app-label></span>
+    </ng-template>
+    <ng-template ngbTabContent>
+      <app-button [value]="value"></app-button>
+      <app-button [value]="value" [disabled]="disabled"></app-button>
+      <app-button [value]="value" [color]="color" [backgroundColor]="backgroundColor"></app-button>
+      <app-button [value]="value" [border]="border" [borderRadius]="borderRadius"></app-button>
+      <app-button [value]="value" [width]="width" [height]="height" [boxShadow]="boxShadow"></app-button>
+      <app-button [value]="value" [margin]="margin"></app-button>
+      <app-button [value]="value" [padding]="padding" [position]="position"></app-button>
+      <app-button [value]="value" [disabled]="disabled" [color]="color" [backgroundColor]="backgroundColor" [border]="border" [borderRadius]="borderRadius"
+        [width]="width" [height]="height" [boxShadow]="boxShadow" [margin]="margin" [display]="display" [padding]="padding"
+        [position]="position"></app-button>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>
+      <b>Builder</b>
+    </ng-template>
+    <ng-template ngbTabContent>
+      <app-blueprint></app-blueprint>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="icon">
+    <ng-template ngbTabContent>
+
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

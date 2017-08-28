@@ -1,0 +1,21 @@
+<div *ngIf="bluePrints">
+  <div *ngFor="let bluePrint of bluePrints" [ngSwitch]="bluePrint.typeId">
+    <div *ngSwitchCase="0">
+      <app-ui-label [labelBluePrint]="bluePrint"></app-ui-label>
+    </div>
+    <div *ngSwitchCase="1">
+      <app-ui-button [buttonBluePrint]="bluePrint"></app-ui-button>
+    </div>
+    <div *ngSwitchCase="2">
+      <app-ui-alert [alertBluePrint]="bluePrint"></app-ui-alert>
+    </div>
+    <div *ngSwitchCase="3">
+      <app-ui-icon [iconBluePrint]="bluePrint"></app-ui-icon>
+    </div>
+    <div *ngSwitchCase="4">
+      <app-ui-list [listBluePrint]="bluePrint"></app-ui-list>
+    </div>
+    <div *ngSwitchDefault>
+    </div>
+  </div>
+</div>

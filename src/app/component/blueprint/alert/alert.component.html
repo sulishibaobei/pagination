@@ -1,0 +1,10 @@
+<div *ngIf="alertBluePrint.staticAlertClosed">
+  <ngb-alert type="{{alertBluePrint.type}}" [dismissible]="true" (close)="alertBluePrint.AlertClose();alertBluePrint.staticAlertClosed=false">
+    <strong>
+          {{alertBluePrint.title}}
+    </strong>
+    <p>
+      {{alertBluePrint.message}}
+    </p>
+  </ngb-alert>
+</div>
