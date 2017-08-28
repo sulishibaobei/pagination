@@ -11,5 +11,5 @@
 其中还借助了ng2-bootstrap框架来使页面变得好看点。
 
 运行地址：
-https://sulishibaobei.github.io/test/dist/index.html
+https://sulishibaobei.github.io/pagination/dist/index.html
 
